@@ -1,0 +1,22 @@
+    Checking hardware_monitor v0.1.0 (C:\Users\will\thenozzle\hardware_monitor)
+warning: unused imports: `PdhAddCounterW`, `PdhCollectQueryData`, `PdhGetFormattedCounterValue`, and `PdhOpenQueryW`
+ --> src\main.rs:8:18
+  |
+8 |     self as pdh, PdhAddCounterW, PdhCollectQueryData, PdhGetFormattedCounterValue, PdhOpenQueryW,
+  |                  ^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unnecessary `unsafe` block
+  --> src\main.rs:66:21
+   |
+61 |             unsafe {
+   |             ------ because it's nested under this `unsafe` block
+...
+66 |                     unsafe {
+   |                     ^^^^^^ unnecessary `unsafe` block
+   |
+   = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+
+warning: `hardware_monitor` (bin "hardware_monitor") generated 2 warnings (run `cargo fix --bin "hardware_monitor" -p hardware_monitor` to apply 1 suggestion)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.35s

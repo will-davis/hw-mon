@@ -1,0 +1,13 @@
+[package]
+name = "hardware_monitor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.30"
+sysinfo = "0.33"
+nvml-wrapper = "0.10"
+windows-sys = { version = "0.52", features = [
+    "Win32_System_Performance",
+] }
+image = "0.25"
