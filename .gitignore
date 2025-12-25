@@ -1,1 +1,5 @@
 /target
+*.log
+*.txt
+RECOVERY_CONTEXT.md
+.gemini
